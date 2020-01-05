@@ -37,6 +37,10 @@
               {{ end }}
               {{ end }}
 
+              {{ range .Site.Params.social }}
+              <li><a href="{{ .link | safeURL }}" style="padding-top: 0px; padding-bottom: 0px"><i class="{{ .icon }}" style="font-size: 40px;"></i></a></li>
+              {{ end }}
+
               <!-- Language List -->
               {{- if .Site.IsMultiLingual }}
               <li>
