@@ -1,0 +1,15 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ $data := index .Site.Data .Site.Language.Lang }}
+
+<section class="page-wrapper">
+  <div class="container" style="text-align: center">
+    <div class="row">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+{{ end }}
